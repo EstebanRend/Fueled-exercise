@@ -1,0 +1,11 @@
+/**
+ * Front-end and editor styles for the Staff Card block wrapper.
+ *
+ * The card's own presentation is a shared component style
+ * (assets/css/components/staff.css) because the same card is rendered by the
+ * Staff List block as well.
+ */
+
+.wp-block-meridian-staff-card {
+	max-inline-size: 320px;
+}

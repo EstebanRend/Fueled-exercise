@@ -1,0 +1,42 @@
+/* --- Single content (advisor bio, article) --- */
+
+.meridian-advisor__title {
+	color: var(--wp--preset--color--muted);
+	font-weight: 600;
+	margin: var(--wp--preset--spacing--8) 0 var(--wp--preset--spacing--12);
+}
+
+.meridian-advisor__department,
+.meridian-advisor__department a {
+	color: var(--wp--preset--color--accent-dark);
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.single-post .wp-block-post-terms {
+	color: var(--wp--preset--color--accent-dark);
+	font-size: var(--wp--preset--font-size--minus-1);
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	margin-bottom: var(--wp--preset--spacing--12);
+	text-transform: uppercase;
+}
+
+.single-post .wp-block-post-title {
+	letter-spacing: -0.02em;
+	margin-bottom: var(--wp--preset--spacing--16);
+}
+
+.single-post .wp-block-post-featured-image {
+	border-radius: 12px;
+	margin-top: var(--wp--preset--spacing--24);
+	overflow: hidden;
+}
+
+.single-post .wp-block-post-date,
+.single-post .wp-block-post-author {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--minus-1);
+}

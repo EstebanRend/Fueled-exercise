@@ -1,0 +1,45 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"is-style-default","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var(--wp--preset--spacing--40-64)","bottom":"var(--wp--preset--spacing--56-112)"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group is-style-default" style="margin-top:0;padding-top:var(--wp--preset--spacing--40-64);padding-bottom:var(--wp--preset--spacing--56-112)">
+
+	<!-- wp:columns {"align":"wide","verticalAlignment":"top","className":"meridian-advisor","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|56-112"}}}} -->
+	<div class="wp-block-columns alignwide are-vertically-aligned-top meridian-advisor">
+
+		<!-- wp:column {"width":"38%"} -->
+		<div class="wp-block-column" style="flex-basis:38%">
+			<!-- wp:post-featured-image {"aspectRatio":"1","className":"meridian-advisor__photo","style":{"border":{"radius":"12px"}}} /-->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"62%"} -->
+		<div class="wp-block-column" style="flex-basis:62%">
+
+			<!-- wp:paragraph {"className":"meridian-eyebrow"} -->
+			<p class="meridian-eyebrow">Advisor</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:post-title {"level":1} /-->
+
+			<!-- wp:paragraph {"className":"meridian-advisor__title","metadata":{"bindings":{"content":{"source":"core/post-meta","args":{"key":"meridian_job_title"}}}},"fontSize":"plus-1"} -->
+			<p class="meridian-advisor__title has-plus-1-font-size"></p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:post-terms {"term":"staff_department","className":"meridian-advisor__department","fontSize":"minus-1"} /-->
+
+			<!-- wp:post-content {"style":{"spacing":{"margin":{"top":"var:preset|spacing|24"}}},"layout":{"type":"constrained","contentSize":"100%"}} /-->
+
+			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|32"}}}} -->
+			<p style="margin-top:var(--wp--preset--spacing--32)"><a href="/team/">← Back to the team</a></p>
+			<!-- /wp:paragraph -->
+
+		</div>
+		<!-- /wp:column -->
+
+	</div>
+	<!-- /wp:columns -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

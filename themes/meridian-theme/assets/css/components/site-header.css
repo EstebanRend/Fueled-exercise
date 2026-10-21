@@ -1,0 +1,53 @@
+/* --- Site header & brand --- */
+
+.meridian-site-header {
+	background-color: var(--wp--preset--color--base);
+	border-bottom: 1px solid var(--wp--preset--color--border);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.meridian-brand {
+	align-items: baseline;
+	display: inline-flex;
+	gap: 0;
+	text-decoration: none;
+}
+
+.meridian-brand:hover,
+.meridian-brand:focus {
+	text-decoration: none;
+}
+
+.meridian-brand__name {
+	color: var(--wp--preset--color--ink);
+	font-size: clamp(1.75rem, 1.45rem + 1.3vw, 2.25rem);
+	font-weight: 800;
+	letter-spacing: -0.045em;
+	line-height: 1;
+}
+
+.meridian-brand__dot {
+	color: var(--wp--preset--color--accent);
+}
+
+.meridian-brand--footer .meridian-brand__name {
+	color: var(--wp--preset--color--base);
+}
+
+.meridian-nav-area {
+	align-items: center;
+}
+
+.meridian-nav-area .wp-block-navigation {
+	font-weight: 500;
+}
+
+.meridian-nav-area .wp-block-navigation-item__content {
+	color: var(--wp--preset--color--ink);
+}
+
+.meridian-nav-area .wp-block-navigation-item__content:hover {
+	color: var(--wp--preset--color--accent-dark);
+}

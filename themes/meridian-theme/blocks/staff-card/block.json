@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "meridian/staff-card",
+	"version": "1.0.0",
+	"title": "Staff Card",
+	"category": "widgets",
+	"icon": "id-alt",
+	"description": "Displays a single staff member as a card.",
+	"keywords": [
+		"staff",
+		"team",
+		"person"
+	],
+	"textdomain": "meridian-theme",
+	"attributes": {
+		"postId": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [
+			"wide",
+			"full"
+		]
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style.css",
+	"render": "file:./markup.php"
+}

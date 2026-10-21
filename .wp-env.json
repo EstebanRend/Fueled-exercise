@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/wp-env.json",
+	"phpVersion": "8.4",
+	"themes": [ "./themes/meridian-theme" ],
+	"testsEnvironment": false,
+	"config": {
+		"WP_DEBUG": true,
+		"WP_DEBUG_LOG": true,
+		"SCRIPT_DEBUG": true,
+		"WP_ENVIRONMENT_TYPE": "local"
+	},
+	"lifecycleScripts": {
+		"afterStart": "bash bin/build.sh"
+	}
+}

@@ -1,0 +1,76 @@
+/* --- Staff card & directory listing --- */
+
+.meridian-staff-card {
+	block-size: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--30, 1rem);
+}
+
+.meridian-staff-card__media {
+	aspect-ratio: 1;
+	background-color: var(--wp--preset--color--tertiary, #f0f0f0);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.meridian-staff-card__photo {
+	block-size: 100%;
+	display: block;
+	inline-size: 100%;
+	object-fit: cover;
+}
+
+.meridian-staff-card__photo--placeholder {
+	block-size: 100%;
+	display: block;
+	inline-size: 100%;
+}
+
+.meridian-staff-card__body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.meridian-staff-card__name {
+	margin: 0;
+}
+
+.meridian-staff-card__title {
+	font-weight: 600;
+	margin: 0;
+}
+
+.meridian-staff-card__department {
+	font-size: 0.8em;
+	letter-spacing: 0.05em;
+	margin: 0;
+	opacity: 0.75;
+	text-transform: uppercase;
+}
+
+.meridian-staff-card__bio {
+	margin: 0.5rem 0 0;
+}
+
+/* One row of four on desktop, two up on tablet, single column on mobile. */
+.meridian-staff-list {
+	display: grid;
+	gap: var(--wp--preset--spacing--40, 1.5rem);
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+
+	.meridian-staff-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 64em) {
+
+	.meridian-staff-list {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

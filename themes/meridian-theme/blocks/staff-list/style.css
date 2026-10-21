@@ -1,0 +1,20 @@
+/**
+ * Front-end and editor styles for the Staff List block.
+ *
+ * The grid and card presentation are shared component styles
+ * (assets/css/components/staff.css) so the directory and the standalone Staff
+ * Card block stay visually consistent.
+ */
+
+.wp-block-meridian-staff-list {
+	inline-size: 100%;
+}
+
+.meridian-staff-list__more {
+	margin-block-end: 0;
+	margin-block-start: var(--wp--preset--spacing--40, 1.5rem);
+}
+
+.meridian-staff-list__more-link {
+	font-weight: 600;
+}

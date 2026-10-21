@@ -1,0 +1,34 @@
+/* --- Front page --- */
+
+/* Full-bleed sections sit flush; their own padding sets the rhythm, so drop
+   the constrained-layout block gap between them. */
+.wp-block-group.is-layout-constrained > .meridian-hero,
+.wp-block-group.is-layout-constrained > .meridian-section,
+.wp-block-group.is-layout-constrained > .meridian-quote,
+.wp-block-group.is-layout-constrained > .meridian-cta {
+	margin-block-start: 0;
+}
+
+.meridian-hero__title {
+	margin: 0 0 var(--wp--preset--spacing--24);
+	max-width: 15ch;
+}
+
+.meridian-hero__lede {
+	color: rgba(255, 255, 255, 0.82);
+	max-width: 46ch;
+}
+
+.meridian-hero__art {
+	margin-inline: auto;
+	max-width: 100%;
+}
+
+.meridian-hero__art svg {
+	height: auto;
+	max-width: 100%;
+}
+
+.meridian-quote {
+	background-color: var(--wp--preset--color--surface);
+}

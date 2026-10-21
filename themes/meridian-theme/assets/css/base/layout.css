@@ -1,0 +1,22 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.has-global-padding :where(.has-global-padding.is-layout-constrained) {
+	padding-left: var(--wp--style--root--padding-left);
+	padding-right: var(--wp--style--root--padding-right);
+}
+
+.is-layout-constrained .wp-block-image.alignwide {
+	max-width: min(100%, var(--wp--style--global--wide-size)) !important;
+}
+
+.wp-block-post-template.is-layout-flex {
+	align-items: stretch;
+}
+
+/* Top-level template parts (header / main / footer) sit flush — no block gap
+   between them, so full-bleed colored sections meet cleanly. */
+.wp-site-blocks > * {
+	margin-block-start: 0;
+}

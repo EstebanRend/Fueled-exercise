@@ -1,0 +1,52 @@
+/* --- Site footer --- */
+
+.meridian-site-footer {
+	--wp--preset--color--ink-link: rgba(255, 255, 255, 0.72);
+}
+
+.meridian-site-footer p {
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.meridian-footer__heading {
+	color: var(--wp--preset--color--base);
+	letter-spacing: 0.08em;
+	margin: 0 0 var(--wp--preset--spacing--12);
+	text-transform: uppercase;
+}
+
+.meridian-footer__links a,
+.meridian-site-footer .meridian-footer__bottom a {
+	color: rgba(255, 255, 255, 0.72);
+	line-height: 2;
+	text-decoration: none;
+}
+
+.meridian-footer__links a:hover,
+.meridian-footer__links a:focus,
+.meridian-site-footer .meridian-footer__bottom a:hover {
+	color: var(--wp--preset--color--accent);
+	text-decoration: none;
+}
+
+.meridian-footer__meta {
+	margin-top: var(--wp--preset--spacing--24);
+}
+
+/* Keep the brand blurb from crowding the first link column. */
+.meridian-site-footer .wp-block-columns {
+	column-gap: var(--wp--preset--spacing--56);
+}
+
+.meridian-site-footer .wp-block-column:first-child p {
+	max-width: 34ch;
+}
+
+.meridian-footer__rule {
+	border-color: rgba(255, 255, 255, 0.16);
+}
+
+.meridian-footer__disclaimer {
+	color: rgba(255, 255, 255, 0.5);
+	max-width: 60rem;
+}

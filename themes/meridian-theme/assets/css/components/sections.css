@@ -1,0 +1,144 @@
+/* --- Section furniture (eyebrows, capabilities, quote, dark sections) --- */
+
+.meridian-eyebrow {
+	color: var(--wp--preset--color--accent-dark);
+	font-size: var(--wp--preset--font-size--minus-1);
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	margin: 0 0 var(--wp--preset--spacing--12);
+	text-transform: uppercase;
+}
+
+.meridian-section__lede {
+	color: var(--wp--preset--color--muted);
+	max-width: 42rem;
+}
+
+/* Capabilities — three across on desktop, one column on small screens. */
+
+.meridian-capabilities {
+	display: grid;
+	gap: var(--wp--preset--spacing--24);
+	grid-template-columns: 1fr;
+}
+
+/* Drop the flow layout's top margins so every card starts at the row top. */
+.meridian-capabilities > * {
+	margin-block: 0;
+}
+
+@media (min-width: 48em) {
+
+	.meridian-capabilities {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.meridian-capability {
+	background-color: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 12px;
+	padding: var(--wp--preset--spacing--32);
+}
+
+.meridian-capability__index {
+	color: var(--wp--preset--color--accent);
+	font-size: var(--wp--preset--font-size--heading-4);
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	margin: 0 0 var(--wp--preset--spacing--12);
+}
+
+.meridian-capability p:not(.meridian-capability__index) {
+	color: var(--wp--preset--color--muted);
+}
+
+/* Markets snapshot (MER-528 placeholder band) */
+
+.meridian-markets__grid {
+	display: grid;
+	gap: var(--wp--preset--spacing--24, 1rem);
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	margin-block-start: var(--wp--preset--spacing--12, 0.75rem);
+}
+
+.meridian-markets__item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.15rem;
+}
+
+.meridian-markets__label {
+	color: var(--wp--preset--color--ink);
+	font-weight: 600;
+}
+
+.meridian-markets__value {
+	font-size: var(--wp--preset--font-size--heading-4);
+	font-weight: 800;
+	letter-spacing: -0.02em;
+}
+
+.meridian-markets__change {
+	color: var(--wp--preset--color--muted);
+	font-size: var(--wp--preset--font-size--minus-1);
+}
+
+/* Market perspectives — three across on desktop, one on small screens. */
+
+.meridian-perspectives-grid {
+	display: grid;
+	gap: var(--wp--preset--spacing--24);
+	grid-template-columns: 1fr;
+}
+
+/* Let each post card fill its cell so every card is the same height. */
+.meridian-perspectives-grid > li {
+	display: flex;
+	margin-block: 0;
+}
+
+.meridian-perspectives-grid > li > * {
+	width: 100%;
+}
+
+@media (min-width: 48em) {
+
+	.meridian-perspectives-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* Featured quote */
+
+.meridian-quote__inner {
+	border: 0;
+	margin: 0 auto;
+	max-width: 52rem;
+	padding: 0;
+	text-align: center;
+}
+
+.meridian-quote__inner p {
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	line-height: 1.35;
+}
+
+.meridian-quote__inner cite {
+	color: var(--wp--preset--color--muted);
+	display: block;
+	font-size: var(--wp--preset--font-size--minus-1);
+	font-style: normal;
+	letter-spacing: 0.04em;
+	margin-top: var(--wp--preset--spacing--16);
+	text-transform: uppercase;
+}
+
+/* Headings sit on dark backgrounds in these sections — keep them legible */
+
+.meridian-hero :where(h1, h2, h3),
+.meridian-cta :where(h1, h2, h3),
+.meridian-site-footer :where(h1, h2, h3) {
+	color: var(--wp--preset--color--base);
+}
